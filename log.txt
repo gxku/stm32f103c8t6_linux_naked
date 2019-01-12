@@ -1,0 +1,23 @@
+
+1.   Error: ARM register expected
+   ldr  R  [m]  mem-> R
+   str  R  [m]  R->mem
+
+2.   Error: internal_relocation (type: OFFSET_IMM) not fixed up
+   立即数不对
+   ldr R  =#立即数
+
+RCC register
+0   0x03034a83 
+4   0x001d040a
+8   0
+c   0
+10  0
+14  14
+18  0x0000401d
+1c  0
+20  0
+24  0x0c000000
+
+3.very important
+-mcpu=cortex-m3 -mthumb   //use gcc option
